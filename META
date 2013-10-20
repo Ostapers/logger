@@ -1,0 +1,11 @@
+version = "0.4"
+description = "Logger as a Camlp5 syntax extension"
+
+package "syntax" (
+ version = "0.4"
+ description = "Syntax extension for Logger"
+ requires = "camlp5"
+ #archive(syntax, preprocessor) = "pa_log.cmo"
+ archive(syntax, toploop) = "pa_log.cmo"
+)
+

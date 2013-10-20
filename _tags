@@ -1,0 +1,6 @@
+#"bar.ml": camlp4o, use_openin
+#<foo/*.ml> or <baz/**/*.ml>: camlp4r, use_openin
+"pa_log.ml": package(camlp5), pp(camlp5o)
+true: verbose
+
+<test/test1.ml>: use_pa_log
