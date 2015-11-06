@@ -5,7 +5,7 @@ package "syntax" (
  version = "0.4"
  description = "Syntax extension for Logger"
  requires = "camlp5"
- archive(syntax, preprocessor) = "pa_log.cmo"
- archive(syntax, toploop) = "pa_log.cmo"
+ archive(syntax, preprocessor) = "pa_log.cmo pr_o.cmo"
+ archive(syntax, toploop) = "pa_log.cmo pr_o.cmo"
 )
 
