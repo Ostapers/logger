@@ -1,0 +1,23 @@
+opam-version: "1.2"
+version: "0.4.2"
+authors: "dboulytchev@gmail.com"
+homepage: "http://oops.math.spbu.ru/projects/logger"
+bug-reports: "https://github.com/Ostapers/logger/issues"
+dev-repo: "https://github.com/Ostapers/logger.git"
+
+maintainer: "kakadu.hafanana@gmail.com"
+build: [
+  [make]
+]
+install: [
+  [make "install"]
+]
+remove: [
+  [make "uninstall"]
+]
+
+depends: [ "ocamlfind" 
+  "camlp5" #{>= "6.14+ostappatch" } 
+  "ocamlbuild" {build}
+]
+
